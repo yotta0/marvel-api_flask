@@ -96,3 +96,78 @@ section .content a:hover
     margin: 20px 0 10px;
 }
 
+
+.menuToggle
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #f60f20 url(/static/img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor:  pointer;
+    z-index: 1000;
+}
+
+.menuToggle:hover
+{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.menuToggle.active
+{
+    background: #f60f20 url(/static/img/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+.navigation
+{
+    position: fixed;
+    top: 0;
+    left: calc(100% - 60px);
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.navigation.active
+{
+    left: 0px;
+}
+
+.navigation ul
+{
+    position: relative;
+}
+
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation ul li a
+{
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navigation ul li a:hover
+{
+    color: #f60f20;
+    transition: 0.5s;
+}
