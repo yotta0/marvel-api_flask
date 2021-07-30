@@ -171,3 +171,54 @@ section .content a:hover
     color: #f60f20;
     transition: 0.5s;
 }
+
+.socialbar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialbar ul
+{
+    position: relative;
+}
+
+.socialbar ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+.socialbar ul li a
+{
+    position: relative;
+    display: inline-block;
+    transform: scale(0.6);
+}
+
+.socialbar ul li a:hover
+{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.socialbar .emailbx
+{
+    position: absolute;
+    bottom: 20px;
+    transform: scale(0.6);
+}
+
+.socialbar .emailbx:hover
+{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
