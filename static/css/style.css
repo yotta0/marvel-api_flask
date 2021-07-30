@@ -387,3 +387,60 @@ section .content a:hover
 {
     pointer-events: initial;
 }
+
+/* Responsive */
+@media (max-width: 767px)
+{
+    section
+    {
+        padding: 100px 40px;
+    }
+
+    section .content h2
+    {
+        font-size: 2.5em;
+    }
+
+    .navigation
+    {
+        left: 100%;
+    }
+
+    section .bg
+    {
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 180%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+    section .logo
+    {
+        top: 10px;   
+    }
+
+    .navigation ul li a 
+    {
+        font-size: 2em;
+    }
+
+    .container .search .imgbox
+    {
+        top: 0;
+        right:0;
+        width: 180%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+    .container .search  .formbox
+    {
+        align-items: center;
+        justify-content: center;
+        display: inline block;
+    }
+}
