@@ -20,13 +20,14 @@
         <p class="copyrightText">©2021. Davi "Yotta" Castro</p>
         <div class="container" id="containerbx">
             <div class="search">
-            <div class="imgbox"> <img src="/static/img/strange.jpg"></div>
+            <div class="imgbox"> <img src="{{data.thumbnail}}"></div>
             <div class="formbox">
                 <form>
                     <h2>Marvel Database</h2>
                     <input type="text" placeholder="Insert a hero ou villain">
                     <button class="submit">Submit</button>
                     <button class="submit" onclick="onOff();">Back</button>
+                    <h1>{{data.name}}</h1>
                 </form>
             </div>
         </div>
