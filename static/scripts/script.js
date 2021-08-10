@@ -7,5 +7,7 @@ function toogleMenu(){
 
 function onOff(){
     var toggleHide = document.getElementById("containerbx");
+    var backOpacity = document.getElementById("mainDiv");
     toggleHide.classList.toggle('hide')
+    backOpacity.classList.toggle('transparent')
 }
