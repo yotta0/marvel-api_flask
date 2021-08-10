@@ -10,28 +10,30 @@
 </head>
 <body>
     <section>
-        <div class="logo"><img src="/static/img/marvel_logo.png"></div>
-        <img src="/static/img/capmarvel.jpg" class="bg">
-        <div class="content">
-            <h2>Web Development<br>Marvel API-RESTFUL Project</h2>
-            <p>Project with the objective of studying the API-RESTFUL technology using the Python microframework "Flask"</p>
-            <a href="#" onclick="onOff();"> Start a Request</a>
+        <div class="main" id="mainDiv">
+            <div class="logo"><img src="/static/img/marvel_logo.png"></div>
+            <img src="/static/img/capmarvel.jpg" class="bg">
+            <div class="content">
+                <h2>Web Development<br>Marvel API-RESTFUL Project</h2>
+                <p>Project with the objective of studying the API-RESTFUL technology using the Python microframework "Flask"</p>
+                <a href="#" onclick="onOff();"> Start a Request</a>
+            </div>
+            <p class="copyrightText">©2021. Davi "Yotta" Castro</p>
         </div>
-        <p class="copyrightText">©2021. Davi "Yotta" Castro</p>
         <div class="container" id="containerbx">
             <div class="search">
-            <div class="imgbox"> <img src="{{data.thumbnail}}"></div>
-            <div class="formbox">
-                <form>
-                    <h2>Marvel Database</h2>
-                    <input type="text" placeholder="Insert a hero ou villain">
-                    <button class="submit">Submit</button>
-                    <button class="submit" onclick="onOff();">Back</button>
-                    <h1>{{data.name}}</h1>
-                </form>
+                <div class="imgbox"> <img src="{{data.thumbnail}}"></div>
+                <div class="formbox">
+                    <form>
+                        <h2>Marvel Database</h2>
+                        <input type="text" placeholder="Insert a hero ou villain">
+                        <button class="submit">Submit</button>
+                        <button class="submit" onclick="onOff();">Back</button>
+                        <h1>{{data.name}}</h1>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </section>
     <div class="menuToggle" id="menutoggle" onclick="toogleMenu()"></div>
     <div class="navigation" id="navigationId">
