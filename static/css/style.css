@@ -237,6 +237,7 @@ section .content a:hover
 
     width: 100vh;
     height: 50%;
+    border-radius: 6px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
